@@ -1,4 +1,4 @@
-# ntll-taxi-booking# NTLL Taxi Booking Modal 🚖
+# NTLL Taxi Booking Modal 🚖
 
 A responsive taxi booking modal built using **HTML, CSS, JavaScript**, and optional **PHP backend integration**.  
 The project includes modern UX features such as modal booking, keyboard tab indexing, SweetAlert success alerts, and Font Awesome icons for car selection.
