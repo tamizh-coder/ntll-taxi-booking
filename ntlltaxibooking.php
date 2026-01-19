@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        .required-asterisk {
+            color: #e53935;
+            font-weight: bold;
+            /* margin-left: 1px; */
+        }
         body {
             font-family: Arial, sans-serif;
             background: #f2f6ff;
@@ -215,9 +220,8 @@
                 <div class="form-grid">
                     <!-- Car Type -->
                     <div class="field car-type select-icon-wrapper">
-                        <label>Car Type</label>
+                        <label>Car Type <span class="required-asterisk">*</span></label>
                         <i class="fa-solid fa-car-side car-icon"></i>
-
                         <select name="car_type" id="carType" required tabindex="1">
                             <option value="">Select Car Type</option>
                             <option>Mini</option>
@@ -231,7 +235,7 @@
                     </div>
                     <!-- Package -->
                     <div class="field package">
-                        <label>Package</label>
+                        <label>Package <span class="required-asterisk">*</span></label>
                         <select name="package" required tabindex="2">
                             <option value="">Select Package</option>
                             <option>Local Trip</option>
@@ -241,27 +245,27 @@
                     </div>
                     <!-- Name -->
                     <div class="field name">
-                        <label>Name</label>
+                        <label>Name <span class="required-asterisk">*</span></label>
                         <input type="text" name="name" required tabindex="3">
                     </div>
                     <!-- Mobile -->
                     <div class="field mobile">
-                        <label>Mobile Number</label>
+                        <label>Mobile Number <span class="required-asterisk">*</span></label>
                         <input type="number" name="mobile" required tabindex="4">
                     </div>
                     <!-- From -->
                     <div class="field from">
-                        <label>From</label>
+                        <label>From <span class="required-asterisk">*</span></label>
                         <input type="text" name="from_location" required tabindex="5">
                     </div>
                     <!-- To -->
                     <div class="field to">
-                        <label>To</label>
+                        <label>To <span class="required-asterisk">*</span></label>
                         <input type="text" name="to_location" required tabindex="6">
                     </div>
                     <!-- Pickup -->
                     <div class="field pickup">
-                        <label>Pickup Date & Time</label>
+                        <label>Pickup Date & Time <span class="required-asterisk">*</span></label>
                         <input type="datetime-local" name="pickup_datetime" required tabindex="7">
                     </div>
                     <button type="submit" class="submit-btn">Book Now</button>
